@@ -162,3 +162,72 @@ Thu Jan 08 2015 15:35:27 GMT-0500 (EST)
 [90mGET /images/backbot.png [32m200 [90m5ms - 5.24kb[0m
 [90mGET /images/social-s.png [32m200 [90m5ms - 7.43kb[0m
 [90mGET /images/background.jpg [32m200 [90m4482ms - 298.03kb[0m
+Thu Jan 08 2015 15:44:30 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'en-US,en;q=0.5',
+  'accept-encoding': 'gzip, deflate',
+  connection: 'keep-alive' }
+88.103.15.152
+{ range: [ 1483149056, 1483149823 ],
+  country: 'CZ',
+  region: '52',
+  city: 'Prague',
+  ll: [ 50.0833, 14.4667 ],
+  metro: 0 }
+[90mGET / [32m200 [90m11ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m1ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m1372ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m40ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m10ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m3ms - 7.43kb[0m
+[90mGET /images/background.jpg [32m200 [90m902ms - 298.03kb[0m
+Thu Jan 08 2015 15:45:02 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  connection: 'keep-alive',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36',
+  referer: 'https://www.facebook.com/',
+  'accept-encoding': 'gzip, deflate, sdch',
+  'accept-language': 'en-US,en;q=0.8' }
+141.72.253.85
+{ range: [ 2370370560, 2370371583 ],
+  country: 'DE',
+  region: '01',
+  city: 'Stuttgart',
+  ll: [ 48.7667, 9.1833 ],
+  metro: 0 }
+[90mGET / [32m200 [90m13ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m3ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m61ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m8ms - 5.25kb[0m
+[90mGET /images/background.jpg [32m200 [90m14ms - 298.03kb[0m
+[90mGET /images/backbot.png [32m200 [90m13ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m4ms - 7.43kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m200 [90m46ms - 258.87kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m9ms - 80.96kb[0m
+Thu Jan 08 2015 15:46:15 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'en-US,en;q=0.5',
+  'accept-encoding': 'gzip, deflate',
+  connection: 'keep-alive' }
+88.103.15.152
+{ range: [ 1483149056, 1483149823 ],
+  country: 'CZ',
+  region: '52',
+  city: 'Prague',
+  ll: [ 50.0833, 14.4667 ],
+  metro: 0 }
+[90mGET / [32m200 [90m8ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m4ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m1ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m1609ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m7ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m8ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m8ms - 7.43kb[0m
+[90mGET /images/background.jpg [32m200 [90m708ms - 298.03kb[0m
