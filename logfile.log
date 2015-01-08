@@ -231,3 +231,279 @@ Thu Jan 08 2015 15:46:15 GMT-0500 (EST)
 [90mGET /images/backbot.png [32m200 [90m8ms - 5.24kb[0m
 [90mGET /images/social-s.png [32m200 [90m8ms - 7.43kb[0m
 [90mGET /images/background.jpg [32m200 [90m708ms - 298.03kb[0m
+Thu Jan 08 2015 15:52:14 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  connection: 'keep-alive',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36',
+  referer: 'https://www.facebook.com/',
+  'accept-encoding': 'gzip, deflate, sdch',
+  'accept-language': 'en-US,en;q=0.8,cs;q=0.6' }
+85.70.130.158
+{ range: [ 1430683904, 1430684415 ],
+  country: 'CZ',
+  region: '',
+  city: '',
+  ll: [ 49.75, 15.5 ],
+  metro: 0 }
+[90mGET / [32m200 [90m8ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m2ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m156ms - 277.52kb[0m
+[90mGET /images/background.jpg [32m200 [90m3ms - 298.03kb[0m
+[90mGET /images/backtop.png [32m200 [90m1ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m2ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m1ms - 7.43kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m200 [90m6ms - 258.87kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m4ms - 32kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m92ms - 226.87kb[0m
+Thu Jan 08 2015 15:55:02 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  connection: 'keep-alive',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60',
+  referer: 'http://l.facebook.com/l.php?u=http%3A%2F%2Fal-kh.me%2F&h=tAQEzg68Y&enc=AZNGjM_W4uMDtuNjKm2hTpfvK4OEh4oJ8g0hXwACWQd_3DVCp21gZ9yk7lyR1AuboSaUVH0Zmqn8LNILCLEvyCuDjl_EIdgxYBhwRrJe4A9TFtQDU9zz6N0PLUMjTzZwHWN40jp57Ruv4Avk6dQf-ZvLmBhDbUnoGNTjcI-PFBAHqg&s=1',
+  'accept-encoding': 'gzip, deflate, lzma, sdch',
+  'accept-language': 'en-US,en;q=0.8' }
+46.165.232.215
+{ range: [ 782617858, 782630911 ],
+  country: 'DE',
+  region: '',
+  city: '',
+  ll: [ 51, 9 ],
+  metro: 0 }
+[90mGET / [32m200 [90m22ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.24kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m42ms - 277.52kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m1ms - 2.69kb[0m
+[90mGET /images/background.jpg [32m200 [90m2ms - 298.03kb[0m
+[90mGET /images/backtop.png [32m200 [90m2ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m1ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m1ms - 7.43kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m200 [90m87ms - 258.87kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m3ms - 32kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m61ms - 226.87kb[0m
+Thu Jan 08 2015 16:04:21 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  connection: 'keep-alive',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36',
+  'accept-encoding': 'gzip,deflate,sdch',
+  'accept-language': 'en-US,en;q=0.8',
+  'if-none-match': 'W/"d00-2115871428"',
+  'if-modified-since': 'Wed, 31 Dec 2014 14:53:30 GMT' }
+88.103.15.152
+{ range: [ 1483149056, 1483149823 ],
+  country: 'CZ',
+  region: '52',
+  city: 'Prague',
+  ll: [ 50.0833, 14.4667 ],
+  metro: 0 }
+[90mGET / [32m200 [90m6ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m3ms - 2.69kb[0m
+Thu Jan 08 2015 16:04:24 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  connection: 'keep-alive',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53',
+  'accept-language': 'en-us',
+  referer: 'http://lm.facebook.com/l.php?u=http%3A%2F%2Fal-kh.me%2F&h=fAQEa1yP1&enc=AZP9n1yLvV7lTyUhl_-OMjRVSi9BkOF7a0eaaDK02ZA8e-XhTvfQ14AYMV82-I4fShaZ7zr6JaktbIG1BULqp-51tD8k9YB4BVer3woZtnScJxsF3gsOeZmHGKlXEfVQoRlgTeJ-KsqCaeMLnA1yt57DAZ6iEcsHlNQJbkj9_WV-sA&s=1',
+  'accept-encoding': 'gzip, deflate' }
+94.191.185.245
+{ range: [ 1589622016, 1589623807 ],
+  country: 'DK',
+  region: '',
+  city: '',
+  ll: [ 56, 10 ],
+  metro: 0 }
+[90mGET / [32m200 [90m8ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m2ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m1114ms - 277.52kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m442ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m1ms - 5.25kb[0m
+[90mGET /images/background.jpg [32m200 [90m156ms - 298.03kb[0m
+[90mGET /images/social-s.png [32m200 [90m2ms - 7.43kb[0m
+[90mGET /images/backbot.png [32m200 [90m1ms - 5.24kb[0m
+[90mGET /images/backtop.png [32m200 [90m4ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m2ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m2ms - 7.43kb[0m
+[90mGET /images/background.jpg [32m200 [90m1013ms - 298.03kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m200 [90m404ms - 258.87kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [36m304 [90m3ms[0m
+Thu Jan 08 2015 16:22:56 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36',
+  referer: 'https://www.facebook.com/',
+  'accept-encoding': 'gzip, deflate, sdch',
+  'accept-language': 'en-US,en;q=0.8',
+  connection: 'keep-alive' }
+178.62.70.148
+{ range: [ 2990407680, 2990440447 ],
+  country: 'GB',
+  region: 'H9',
+  city: 'London',
+  ll: [ 51.5142, -0.0931 ],
+  metro: 0 }
+[90mGET / [32m200 [90m9ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m39ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m59ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m11ms - 5.25kb[0m
+[90mGET /images/background.jpg [32m200 [90m159ms - 298.03kb[0m
+[90mGET /images/backbot.png [32m200 [90m2ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m3ms - 7.43kb[0m
+Thu Jan 08 2015 16:24:42 GMT-0500 (EST)
+{ accept: 'text/html, application/xhtml+xml, */*',
+  'accept-language': 'en-US,en-GB;q=0.7,en;q=0.3',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 625) like Gecko',
+  'ua-cpu': 'ARM',
+  'accept-encoding': 'gzip, deflate',
+  host: 'al-kh.me',
+  dnt: '1',
+  connection: 'Keep-Alive',
+  'cache-control': 'no-cache' }
+88.103.15.152
+{ range: [ 1483149056, 1483149823 ],
+  country: 'CZ',
+  region: '52',
+  city: 'Prague',
+  ll: [ 50.0833, 14.4667 ],
+  metro: 0 }
+[90mGET / [32m200 [90m8ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m5ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m18ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m223ms - 277.52kb[0m
+[90mGET /images/social-s.png [36m304 [90m2ms[0m
+[90mGET /images/background.jpg [36m304 [90m5ms[0m
+[90mGET /images/backtop.png [36m304 [90m3ms[0m
+[90mGET /images/backbot.png [36m304 [90m3ms[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m200 [90m22ms - 258.87kb[0m
+Thu Jan 08 2015 16:41:59 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  'accept-language': 'en-US,en;q=0.8,fa;q=0.6',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36',
+  connection: 'close',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding': 'gzip, deflate, sdch' }
+216.185.63.250
+{ range: [ 3636014848, 3636019199 ],
+  country: 'US',
+  region: 'OH',
+  city: 'Columbus',
+  ll: [ 39.9653, -83.0235 ],
+  metro: 535 }
+[90mGET / [32m200 [90m6ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m355ms - 277.52kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m1ms - 2.69kb[0m
+[90mGET /images/backtop.png [32m200 [90m1ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m4ms - 5.24kb[0m
+[90mGET /images/background.jpg [32m200 [90m354ms - 298.03kb[0m
+[90mGET /images/social-s.png [32m200 [90m2ms - 7.43kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m358ms - 258.87kb[0m
+[90mHEAD /resources/Ali-Khoramshahi.pdf [32m200 [90m1ms - 258.87kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m3ms - 120.58kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m2ms - 50.16kb[0m
+[90mGET /resources/Ali-Khoramshahi.pdf [32m206 [90m3ms - 22.29kb[0m
+Thu Jan 08 2015 16:48:39 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'en-US,en;q=0.5',
+  'accept-encoding': 'gzip, deflate',
+  referer: 'http://l.facebook.com/l.php?u=http%3A%2F%2Fal-kh.me%2F&h=xAQGNjnnk&enc=AZOVENnZ47ArlBvNEj9tto96ksri1E0jWQyE4jTfbI7OZKTBAbAeSVf13NficMfBjJ3GCp2BCYa5I8NwU818ayGlwZKPB3y3h0i9rQDYiym7c2D-ZFT8MvEFJXYXcusUVR8KVmSyNSMtfiEslHux8AlH4GcaikvrYkwQQkm1KnuovQ&s=1',
+  connection: 'keep-alive' }
+78.102.45.169
+{ range: [ 1315318784, 1315319295 ],
+  country: 'CZ',
+  region: '78',
+  city: 'Ceska',
+  ll: [ 49.2814, 16.5648 ],
+  metro: 0 }
+[90mGET / [32m200 [90m5ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m1ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m109ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m3ms - 5.25kb[0m
+[90mGET /images/social-s.png [32m200 [90m3ms - 7.43kb[0m
+[90mGET /images/backbot.png [32m200 [90m3ms - 5.24kb[0m
+[90mGET /images/background.jpg [32m200 [90m5ms - 298.03kb[0m
+Thu Jan 08 2015 17:11:56 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  referer: 'http://lm.facebook.com/l.php?u=http%3A%2F%2Fal-kh.me%2F&h=HAQGD69zm&enc=AZNQFSXg9-k0hh6WgjW9FfaMASziIUmkN8G6cW6CUYuBt_o-VRANAp8-rOsF5IlMOEkJqeXF4JJlpqRudg5uRHecL87g6X0QTbO5U48oei-jMFKfen2EZRFKin4S3Via6lGlBiju7Laf7w5Uhw4fLAYEPxEjHIw9KBnTv5VYdenYLg&s=1',
+  'accept-encoding': 'gzip',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'en-us',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B440 Version/7.0 Safari/9537.53',
+  'cache-control': 'max-age=259200',
+  connection: 'keep-alive' }
+174.127.71.9
+{ range: [ 2927576320, 2927580671 ],
+  country: 'US',
+  region: 'UT',
+  city: 'Providence',
+  ll: [ 41.6929, -111.8147 ],
+  metro: 770 }
+[90mGET / [32m200 [90m48ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m2ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m2ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m446ms - 277.52kb[0m
+Thu Jan 08 2015 17:12:00 GMT-0500 (EST)
+{ host: 'al-kh.me',
+  referer: 'http://lm.facebook.com/l.php?u=http%3A%2F%2Fal-kh.me%2F&h=HAQGD69zm&enc=AZNQFSXg9-k0hh6WgjW9FfaMASziIUmkN8G6cW6CUYuBt_o-VRANAp8-rOsF5IlMOEkJqeXF4JJlpqRudg5uRHecL87g6X0QTbO5U48oei-jMFKfen2EZRFKin4S3Via6lGlBiju7Laf7w5Uhw4fLAYEPxEjHIw9KBnTv5VYdenYLg&s=1',
+  'accept-encoding': 'gzip',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'en-us',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B440 Version/7.0 Safari/9537.53',
+  'cache-control': 'max-age=259200',
+  connection: 'keep-alive' }
+174.127.71.9
+{ range: [ 2927576320, 2927580671 ],
+  country: 'US',
+  region: 'UT',
+  city: 'Providence',
+  ll: [ 41.6929, -111.8147 ],
+  metro: 770 }
+[90mGET / [32m200 [90m5ms - 3.27kb[0m
+[90mGET /images/background.jpg [32m200 [90m3ms - 298.03kb[0m
+[90mGET /images/backtop.png [32m200 [90m1ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m1ms - 5.24kb[0m
+[90mGET /images/social-s.png [32m200 [90m1ms - 7.43kb[0m
+Thu Jan 08 2015 17:14:33 GMT-0500 (EST)
+{ host: 'www.al-kh.me',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'en-US,en;q=0.5',
+  'accept-encoding': 'gzip, deflate',
+  referer: 'http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&sqi=2&ved=0CB0QFjAA&url=http%3A%2F%2Fwww.al-kh.me%2F&ei=QAGvVMGhM-HSmgXjyYH4BQ&usg=AFQjCNECdDtFP2z7zGVeJ0jhdt5G925DBg&sig2=vip9UKEyCT_fcLUiafXwbg&bvm=bv.83339334,d.dGY',
+  connection: 'keep-alive' }
+88.103.15.152
+{ range: [ 1483149056, 1483149823 ],
+  country: 'CZ',
+  region: '52',
+  city: 'Prague',
+  ll: [ 50.0833, 14.4667 ],
+  metro: 0 }
+[90mGET / [32m200 [90m4ms - 3.27kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m1ms - 2.24kb[0m
+[90mGET /javascripts/jquery.animate-colors-min.js [32m200 [90m2ms - 2.69kb[0m
+[90mGET /javascripts/jquery-1.11.2.js [32m200 [90m254ms - 277.52kb[0m
+[90mGET /images/backtop.png [32m200 [90m7ms - 5.25kb[0m
+[90mGET /images/backbot.png [32m200 [90m6ms - 5.24kb[0m
+[90mGET /images/background.jpg [32m200 [90m11ms - 298.03kb[0m
+[90mGET /images/social-s.png [32m200 [90m1ms - 7.43kb[0m
+Thu Jan 08 2015 17:31:53 GMT-0500 (EST)
+{ host: '188.226.240.232',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2251.0 Safari/537.36',
+  'accept-encoding': 'gzip' }
+182.118.55.140
+{ range: [ 3060924672, 3061841919 ],
+  country: 'CN',
+  region: '09',
+  city: 'Zhengzhou',
+  ll: [ 34.6836, 113.5325 ],
+  metro: 0 }
+[90mGET / [32m200 [90m10ms - 3.27kb[0m
