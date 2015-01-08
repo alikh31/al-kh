@@ -3,6 +3,11 @@
  * GET home page.
  */
 
+var geoip = require('geoip-lite');
+
 exports.index = function (req, res) {
-    res.render('index', { title: 'Express' });
+	var geo = geoip.lookup(req.connection.remoteAddress);
+	console.log(geo);
+
+    res.sendfile('views/index.html');
 };

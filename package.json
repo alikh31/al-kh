@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "3.4.4",
+    "geoip-lite": "^1.1.5",
     "jade": "*",
     "stylus": "*"
   }
