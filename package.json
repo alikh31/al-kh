@@ -1,10 +1,10 @@
 {
-  "name": "_07_BasicExpress",
-  "version": "0.0.0",
-  "description": "07_BasicExpress",
+  "name": "al-kh.me",
+  "version": "0.0.1",
+  "description": "al-kh.me",
   "main": "app.js",
   "author": {
-    "name": "Rami Sayar",
+    "name": "Ali Khoramshahi",
     "email": ""
   },
   "dependencies": {
