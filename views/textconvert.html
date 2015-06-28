@@ -109,7 +109,7 @@
       if(button.innerHTML == 'Get PDF') {
 
         var win = window.open('http://al-kh.me' + pdfUrl, '_blank');
-        win.removeAttribute("disabled");
+        button.removeAttribute("disabled");
         button.innerHTML = 'Create PDF';
       }
       else {
@@ -125,7 +125,7 @@
         ws.send(stringified);
         input.focus();  
         button.innerHTML = 'Creating link...';
-        win.setAttribute("disabled","disabled");        
+        button.setAttribute("disabled","disabled");        
       }
     }
 
