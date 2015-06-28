@@ -69,10 +69,10 @@ var server = ws.createServer(function (conn) {
                     }
 
                     if(obj.getPdf) {
-                        var cmd = 'pandoc -f ' + obj.from + ' -t latex' + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/document.pdf';
+                        var cmd = 'pandoc -f ' + obj.from + ' -t latex' + ' -s ' + tempFolder + '/test.tmp' + ' -o ' + tempFolder + '/document.pdf';
                     }
                     else {
-                        var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/file.' + obj.to;
+                        var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s ' + tempFolder + '/test.tmp' + ' -o ' + tempFolder + '/file.' + obj.to;
                     }
                     
                     
