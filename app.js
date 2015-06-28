@@ -15,7 +15,7 @@ var app = express();
 app.set('port', 80);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
-app.use(express.favicon());
+app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
@@ -23,7 +23,6 @@ app.use(express.methodOverride());
 app.use(app.router);
 //app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.favicon(__dirname + '/public/images/favicon.ico')); 
 
 // development only
 if ('development' == app.get('env')) {
