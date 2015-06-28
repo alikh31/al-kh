@@ -1,18 +1,16 @@
-﻿
-/**
- * Module dependencies.
- */
-
-var express = require('express');
+﻿var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var ws = require('nodejs-websocket');
+var fs = require('fs');
+var exec = require('child_process').exec;
 
 var app = express();
 
 // all environments
-app.set('port', 80);
+app.set('port', 8080);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
@@ -35,3 +33,47 @@ app.get('/users', user.list);
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+var server = ws.createServer(function (conn) {
+
+    console.log("New connection");
+    conn.on("text", function (str) {
+
+        //console.log("Received " + str);
+        try {
+
+            var obj = JSON.parse(str);
+
+            fs.writeFile(__dirname + "/test.tmp", obj.body, function (err) {
+                if (err) {
+                    return console.log(err);
+                }
+                
+                var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s test.tmp' + ' -o test2.tmp';
+                
+                console.log(cmd);
+                var child = exec(cmd);
+                
+                child.on('exit', function () {
+                    
+                    fs.readFile(__dirname + "/test2.tmp", 'utf8', function (err, data) {
+                        if (err) {
+                            return console.log(err);
+                        }
+                        
+                        conn.sendText(data);
+                    });
+                });
+            });
+
+
+        } catch (e) {
+
+            conn.sendText(e.message);
+        }
+    });
+    conn.on("close", function(code, reason) {
+        console.log("Connection closed");
+    });
+}).listen(8001)
