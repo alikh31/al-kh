@@ -53,6 +53,8 @@ var server = ws.createServer(function (conn) {
             tempFolder = path.join(__dirname, 'public/temp/' + id);
             tempFolderShort = 'public/temp/' + id;
 
+            pdfAddress = '/temp/' + id + '/document.pdf';
+
             mkdirp(tempFolder, function(err) { 
 
                 if(err) {
@@ -85,9 +87,9 @@ var server = ws.createServer(function (conn) {
                             if(obj.getPdf) {
                                 var res = {
                                     type: 'pdf',
-                                    link: '/' + tempFolderShort
+                                    link: pdfAddress
                                 }
-                                conn.sendText(res);
+                                conn.sendText(JSON.stringify(res));
                             }
                             else {
                                 conn.sendText(data);
