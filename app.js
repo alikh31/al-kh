@@ -10,7 +10,7 @@ var exec = require('child_process').exec;
 var app = express();
 
 // all environments
-app.set('port', 8080);
+app.set('port', 80);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
@@ -45,19 +45,19 @@ var server = ws.createServer(function (conn) {
 
             var obj = JSON.parse(str);
 
-            fs.writeFile(path.join(__dirname + 'public/temp') + "/test.tmp", obj.body, function (err) {
+            fs.writeFile(path.join(__dirname, 'public/temp') + "/test.tmp", obj.body, function (err) {
                 if (err) {
                     return console.log(err);
                 }
                 
-                var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s test.tmp' + ' -o test2.tmp';
+                var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s public/temp/test.tmp' + ' -o public/temp/test2.tmp';
                 
                 console.log(cmd);
                 var child = exec(cmd);
                 
                 child.on('exit', function () {
                     
-                    fs.readFile(path.join(__dirname + 'public/temp') + "/test2.tmp", 'utf8', function (err, data) {
+                    fs.readFile(path.join(__dirname, 'public/temp') + "/test2.tmp", 'utf8', function (err, data) {
                         if (err) {
                             return console.log(err);
                         }
