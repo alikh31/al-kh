@@ -15,8 +15,3 @@ body {
 textarea {
     resize: none;
 }
-
-.getPdf {
-    padding-left:  1*;
-    text-align: right;
-}

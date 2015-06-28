@@ -54,6 +54,8 @@ var server = ws.createServer(function (conn) {
             tempFolderShort = 'public/temp/' + id;
 
             pdfAddress = '/temp/' + id + '/document.pdf';
+            fileAddress = '/temp/' + id + '/file.';
+
 
             mkdirp(tempFolder, function(err) { 
 
@@ -70,31 +72,40 @@ var server = ws.createServer(function (conn) {
                         var cmd = 'pandoc -f ' + obj.from + ' -t latex' + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/document.pdf';
                     }
                     else {
-                        var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/test2.tmp';
+                        var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/file.' + obj.to;
                     }
                     
                     
                     console.log(cmd);
                     var child = exec(cmd);
+
+                    
                     
                     child.on('exit', function () {
-                        
-                        fs.readFile(tempFolder + "/test2.tmp", 'utf8', function (err, data) {
-                            if (err) {
-                                return console.log(err);
+
+                        if(obj.getPdf) {
+                            var res = {
+                                type: 'pdf',
+                                link: pdfAddress
                             }
-                            
-                            if(obj.getPdf) {
-                                var res = {
-                                    type: 'pdf',
-                                    link: pdfAddress
+                            conn.sendText(JSON.stringify(res));
+                        }
+                        else {
+                            fs.readFile(tempFolder + "/file." + obj.to, 'utf8', function (err, data) {
+                                if (err) {
+                                    return console.log(err);
                                 }
-                                conn.sendText(JSON.stringify(res));
-                            }
-                            else {
-                                conn.sendText(data);
-                            }
-                        });
+                                
+                                
+                                    var res = {
+                                        type: 'pdf',
+                                        link: fileAddress + obj.to,
+                                        content: data
+                                    }
+                                    conn.sendText(JSON.stringify(res));                                
+                            });
+                        }
+                    
                     });
                 });
 

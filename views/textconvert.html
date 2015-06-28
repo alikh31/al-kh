@@ -32,6 +32,7 @@
     var myVar;
 
     var pdfUrl = "";
+    var fileUrl = "";
 
     
     function init() {
@@ -75,7 +76,8 @@
           else{
 
             var output = document.getElementById("output");
-            output.value = e.data;
+            fileUrl = res.link;
+            output.value = res.content;
           }
         }
         catch (err) {
@@ -97,6 +99,14 @@
 
       clearInterval(myVar);
       myVar = setInterval(sendRequest, 1000);
+    }
+
+    function onGetFile() {
+
+        if(fileUrl.trim() != "") {
+
+          var win = window.open('http://al-kh.me' + fileUrl, '_blank');
+        }
     }
 
     function onCreatePDF() {
@@ -256,7 +266,8 @@
             </select> 
 
 
-              <button class="getPdf" id="pdfButton" onclick="onCreatePDF(); return false;">Create PDF</button>
+              <button id="pdfButton" onclick="onCreatePDF(); return false;">Create PDF</button>
+              <button id="getFileButton" onclick="onGetFile(); return false;">Get File</button>
           </form>
       </div>
 
