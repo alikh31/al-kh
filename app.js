@@ -1,6 +1,6 @@
 ﻿var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
+var docconv = require('./routes/docconv');
 var http = require('http');
 var path = require('path');
 var ws = require('nodejs-websocket');
@@ -12,7 +12,7 @@ var mkdirp = require('mkdirp');
 var app = express();
 
 // all environments
-app.set('port', 80);
+app.set('port', 8080);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
@@ -30,7 +30,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/docconv', docconv.list);
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));

@@ -109,6 +109,7 @@
       if(button.innerHTML == 'Get PDF') {
 
         var win = window.open('http://al-kh.me' + pdfUrl, '_blank');
+        win.removeAttribute("disabled");
         button.innerHTML = 'Create PDF';
       }
       else {
@@ -123,6 +124,8 @@
         var stringified = JSON.stringify(msgToSend);
         ws.send(stringified);
         input.focus();  
+        button.innerHTML = 'Creating link...';
+        win.setAttribute("disabled","disabled");        
       }
     }
 
@@ -250,10 +253,11 @@
               <option value="textile">textile</option>
             </select> 
 
-            <button id="pdfButton" onclick="onCreatePDF(); return false;">Create PDF</button>
 
+              <button class="getPdf" id="pdfButton" onclick="onCreatePDF(); return false;">Create PDF</button>
           </form>
       </div>
+
       <div class="starter-template">
 
           <form>
