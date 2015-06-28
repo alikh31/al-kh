@@ -98,7 +98,7 @@ var server = ws.createServer(function (conn) {
                                 
                                 
                                     var res = {
-                                        type: 'pdf',
+                                        type: 'responce',
                                         link: fileAddress + obj.to,
                                         content: data
                                     }
