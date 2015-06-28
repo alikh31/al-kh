@@ -1,14 +1,15 @@
-<!--
-  Lincense: Public Domain
--->
-
-<html><head>
+<html>
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Sample of web_socket.js</title>
+  <title>Document converter</title>
+
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
   <!-- Include these three JS files: -->
-  <script type="text/javascript" src="swfobject.js"></script>
-  <script type="text/javascript" src="web_socket.js"></script>
+  <script type="text/javascript" src="/javascripts/swfobject.js"></script>
+  <script type="text/javascript" src="/javascripts/web_socket.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery-1.11.2.js"></script>
 
   <script type="text/javascript">
     
@@ -20,12 +21,24 @@
     // Everything below is the same as using standard WebSocket.
     
     var ws;
+
+    var myVar;
+
     
     function init() {
 
+      var from = document.getElementById("from");
+      var to = document.getElementById("to");
+      var input = document.getElementById("input");
+
+      input.onkeydown = onSubmit;
+      input.onchange = onSubmit;
+      from.onchange = onSubmit;
+      to.onchange = onSubmit;
+
       // Connect to Web Socket.
       // Change host/port here to your own Web Socket server.
-      ws = new WebSocket("ws://localhost:8001/");
+      ws = new WebSocket("ws://al-kh.me:8001/");
 
       // Set event handlers.
       ws.onopen = function() {
@@ -46,6 +59,16 @@
     }
     
     function onSubmit() {
+
+      clearInterval(myVar);
+      myVar = setInterval(sendRequest, 1000);
+    }
+
+    function sendRequest() {
+
+      clearInterval(myVar);
+      console.log("msg sent");
+
       var from = document.getElementById("from");
       var to = document.getElementById("to");
       var input = document.getElementById("input");
@@ -65,14 +88,19 @@
     }
     
     function output(str) {
-      var log = document.getElementById("log");
-      var escaped = str.replace(/&/, "&amp;").replace(/</, "&lt;").
-        replace(/>/, "&gt;").replace(/"/, "&quot;"); // "
-      log.innerHTML = escaped + "<br>" + log.innerHTML;
+      
+      console.log(str);
     }
 
   </script>
 </head><body onload="init();">
+
+<div id="html">
+<div id="mainDiv" class="maindivclass">
+
+<div id="centeral">
+
+
   <form onsubmit="onSubmit(); return false;">
 
     <label>from</label>
@@ -93,11 +121,14 @@
 
     <textarea name="Text1" cols="70" rows="40" id="input"></textarea>
 
-    <textarea name="Text1" cols="70" rows="40" id="output"></textarea>
+    <textarea readonly="readonly" name="Text1" cols="70" rows="40" id="output"></textarea>
 
-    <br/>
-
-    <input type="submit" value="Send">
   </form>
-  <div id="log"></div>
+
+</div>
+</div>
+</div>
+
 </body></html>
+
+
