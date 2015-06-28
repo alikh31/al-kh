@@ -31,6 +31,8 @@
 
     var myVar;
 
+    var pdfUrl = "";
+
     
     function init() {
 
@@ -45,11 +47,14 @@
       from.onchange = onSubmit;
       to.onchange = onSubmit;
 
-      var pdfUrl = "";
+      
+
+      var baseUrl = 'al-kh.me';
+      //var baseUrl = 'localhost';
 
       // Connect to Web Socket.
       // Change host/port here to your own Web Socket server.
-      ws = new WebSocket("ws://al-kh.me:8001/");
+      ws = new WebSocket("ws://"+baseUrl+":8001/");
 
       // Set event handlers.
       ws.onopen = function() {
@@ -62,11 +67,13 @@
 
           var res = JSON.parse(e.data)
 
-          if(res.type == pdf) {
+          if(res.type == 'pdf') {
+
+            console.log(res.link);
 
               var button = document.getElementById("pdfButton");
               pdfUrl = res.link;
-              button.value = 'Get PDF';
+              button.innerHTML = 'Get PDF';
           }
           else{
 
@@ -99,10 +106,10 @@
 
       var button = document.getElementById("pdfButton");
 
-      if(button.value == 'Get PDF') {
+      if(button.innerHTML == 'Get PDF') {
 
-        var win = $(window).open('http://al-kh.me' + pdfUrl, '_blank');
-        button.value = 'Create PDF'
+        var win = window.open('http://al-kh.me' + pdfUrl, '_blank');
+        button.html('Create PDF');
       }
       else {
         clearInterval(myVar);
