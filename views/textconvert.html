@@ -36,8 +36,6 @@
     
     function init() {
 
-      console.log("loaded");
-
       var from = document.getElementById("from");
       var to = document.getElementById("to");
       var input = document.getElementById("input");
@@ -68,8 +66,6 @@
           var res = JSON.parse(e.data)
 
           if(res.type == 'pdf') {
-
-            console.log(res.link);
 
               var button = document.getElementById("pdfButton");
               pdfUrl = res.link;
@@ -106,6 +102,10 @@
     function onCreatePDF() {
 
       var button = document.getElementById("pdfButton");
+      var from = document.getElementById("from");
+
+      if(input.value.trim() == "")
+        return;
 
       if(button.innerHTML == 'Get PDF') {
 
@@ -114,8 +114,6 @@
         button.innerHTML = 'Create PDF';
       }
       else {
-        console.log("msg sent");
-        var from = document.getElementById("from");
         var input = document.getElementById("input");
         var msgToSend = {
           from : from.value,
@@ -133,11 +131,14 @@
     function sendRequest() {
 
       clearInterval(myVar);
-      console.log("msg sent");
 
       var from = document.getElementById("from");
       var to = document.getElementById("to");
       var input = document.getElementById("input");
+
+      if(input.value.trim() == "")
+        return;
+
       // You can send message to the Web Socket using ws.send.
       var msgToSend = {
         from : from.value,
