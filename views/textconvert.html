@@ -45,6 +45,8 @@
       from.onchange = onSubmit;
       to.onchange = onSubmit;
 
+      var pdfUrl = "";
+
       // Connect to Web Socket.
       // Change host/port here to your own Web Socket server.
       ws = new WebSocket("ws://al-kh.me:8001/");
@@ -55,8 +57,23 @@
       };
       ws.onmessage = function(e) {
         // e.data contains received string.
-        var output = document.getElementById("output");
-        output.value = e.data;
+
+        try {
+
+          var res = JSON.parse(e.data)
+
+          if(res.type == pdf) {
+
+              var button = document.getElementById("pdfButton");
+              pdfUrl = res.link;
+              button.value = 'Get PDF';
+          }
+        }
+        catch (e) {
+
+          var output = document.getElementById("output");
+          output.value = e.data;
+        }
       };
       ws.onclose = function() {
         output("onclose");
@@ -74,18 +91,28 @@
     }
 
     function onCreatePDF() {
-      clearInterval(myVar);
-      console.log("msg sent");
-      var from = document.getElementById("from");
-      var input = document.getElementById("input");
-      var msgToSend = {
-        from : from.value,
-        getPdf: true,
-        body : input.value
-      };
-      var stringified = JSON.stringify(msgToSend);
-      ws.send(stringified);
-      input.focus();
+
+      var button = document.getElementById("pdfButton");
+
+      if(button.value == 'Get PDF') {
+
+        var win = $(window).open('http://al-kh.me' + pdfUrl, '_blank');
+        button.value = 'Create PDF'
+      }
+      else {
+        clearInterval(myVar);
+        console.log("msg sent");
+        var from = document.getElementById("from");
+        var input = document.getElementById("input");
+        var msgToSend = {
+          from : from.value,
+          getPdf: true,
+          body : input.value
+        };
+        var stringified = JSON.stringify(msgToSend);
+        ws.send(stringified);
+        input.focus();  
+      }
     }
 
     function sendRequest() {
@@ -212,7 +239,7 @@
               <option value="textile">textile</option>
             </select> 
 
-            <button onclick="onCreatePDF(); return false;">Create PDF</button>
+            <button id="pdfButton" onclick="onCreatePDF(); return false;">Create PDF</button>
 
           </form>
       </div>
