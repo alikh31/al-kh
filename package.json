@@ -12,7 +12,11 @@
     "fs": "0.0.2",
     "geoip-lite": "^1.1.5",
     "jade": "*",
+    "mkdirp": "^0.5.1",
     "mongodb": "^1.4.28",
-    "stylus": "*"
+    "node-uuid": "^1.4.3",
+    "nodejs-websocket": "^1.2.1",
+    "stylus": "*",
+    "uuid": "^2.0.1"
   }
 }

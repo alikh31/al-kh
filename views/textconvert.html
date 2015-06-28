@@ -73,6 +73,21 @@
       myVar = setInterval(sendRequest, 1000);
     }
 
+    function onCreatePDF() {
+      clearInterval(myVar);
+      console.log("msg sent");
+      var from = document.getElementById("from");
+      var input = document.getElementById("input");
+      var msgToSend = {
+        from : from.value,
+        getPdf: true,
+        body : input.value
+      };
+      var stringified = JSON.stringify(msgToSend);
+      ws.send(stringified);
+      input.focus();
+    }
+
     function sendRequest() {
 
       clearInterval(myVar);
@@ -196,6 +211,8 @@
               <option value="texinfo">texinfo</option>
               <option value="textile">textile</option>
             </select> 
+
+            <button onclick="onCreatePDF(); return false;">Create PDF</button>
 
           </form>
       </div>

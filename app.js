@@ -6,11 +6,13 @@ var path = require('path');
 var ws = require('nodejs-websocket');
 var fs = require('fs');
 var exec = require('child_process').exec;
+var uuid = require('uuid');
+var mkdirp = require('mkdirp');
 
 var app = express();
 
 // all environments
-app.set('port', 80);
+app.set('port', 8080);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
@@ -38,6 +40,9 @@ http.createServer(app).listen(app.get('port'), function () {
 var server = ws.createServer(function (conn) {
 
     console.log("New connection");
+
+    var id = uuid.v4();
+
     conn.on("text", function (str) {
 
         //console.log("Received " + str);
@@ -45,28 +50,53 @@ var server = ws.createServer(function (conn) {
 
             var obj = JSON.parse(str);
 
-            fs.writeFile(path.join(__dirname, 'public/temp') + "/test.tmp", obj.body, function (err) {
-                if (err) {
+            tempFolder = path.join(__dirname, 'public/temp/' + id);
+            tempFolderShort = 'public/temp/' + id;
+
+            mkdirp(tempFolder, function(err) { 
+
+                if(err) {
                     return console.log(err);
                 }
-                
-                var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s public/temp/test.tmp' + ' -o public/temp/test2.tmp';
-                
-                console.log(cmd);
-                var child = exec(cmd);
-                
-                child.on('exit', function () {
+
+                fs.writeFile(tempFolder + "/test.tmp", obj.body, function (err) {
+                    if (err) {
+                        return console.log(err);
+                    }
+
+                    if(obj.getPdf) {
+                        var cmd = 'pandoc -f ' + obj.from + ' -t latex' + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/document.pdf';
+                    }
+                    else {
+                        var cmd = 'pandoc -f ' + obj.from + ' -t ' + obj.to + ' -s ' + tempFolderShort + '/test.tmp' + ' -o ' + tempFolderShort+ '/test2.tmp';
+                    }
                     
-                    fs.readFile(path.join(__dirname, 'public/temp') + "/test2.tmp", 'utf8', function (err, data) {
-                        if (err) {
-                            return console.log(err);
-                        }
+                    
+                    console.log(cmd);
+                    var child = exec(cmd);
+                    
+                    child.on('exit', function () {
                         
-                        conn.sendText(data);
+                        fs.readFile(tempFolder + "/test2.tmp", 'utf8', function (err, data) {
+                            if (err) {
+                                return console.log(err);
+                            }
+                            
+                            if(obj.getPdf) {
+                                var res = {
+                                    type: 'pdf',
+                                    link: '/' + tempFolderShort
+                                }
+                                conn.sendText(res);
+                            }
+                            else {
+                                conn.sendText(data);
+                            }
+                        });
                     });
                 });
-            });
 
+            });
 
         } catch (e) {
 
