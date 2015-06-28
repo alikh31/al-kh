@@ -20,3 +20,10 @@ build/Release
 node_modules
 # Debug log from npm
 npm-debug.log
+
+
+*.dat
+*.tmp
+
+bin
+obj
