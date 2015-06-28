@@ -102,6 +102,7 @@
     function onCreatePDF() {
 
       var button = document.getElementById("pdfButton");
+      var input = document.getElementById("input");
       var from = document.getElementById("from");
 
       if(input.value.trim() == "")
@@ -114,7 +115,6 @@
         button.innerHTML = 'Create PDF';
       }
       else {
-        var input = document.getElementById("input");
         var msgToSend = {
           from : from.value,
           getPdf: true,
