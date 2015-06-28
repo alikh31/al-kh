@@ -108,11 +108,10 @@
 
       if(button.innerHTML == 'Get PDF') {
 
-        var win = window.open('http://al-kh.me' + pdfUrl, '_blank', "toolbar=yes, scrollbars=yes");
-        button.html('Create PDF');
+        var win = window.open('http://al-kh.me' + pdfUrl, '_blank');
+        button.innerHTML('Create PDF');
       }
       else {
-        clearInterval(myVar);
         console.log("msg sent");
         var from = document.getElementById("from");
         var input = document.getElementById("input");
