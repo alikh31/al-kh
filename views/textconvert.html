@@ -68,8 +68,13 @@
               pdfUrl = res.link;
               button.value = 'Get PDF';
           }
+          else{
+
+            var output = document.getElementById("output");
+            output.value = e.data;
+          }
         }
-        catch (e) {
+        catch () {
 
           var output = document.getElementById("output");
           output.value = e.data;
