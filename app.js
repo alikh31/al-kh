@@ -45,7 +45,7 @@ var server = ws.createServer(function (conn) {
 
             var obj = JSON.parse(str);
 
-            fs.writeFile(path.join(__dirname 'public/temp') + "/test.tmp", obj.body, function (err) {
+            fs.writeFile(path.join(__dirname + 'public/temp') + "/test.tmp", obj.body, function (err) {
                 if (err) {
                     return console.log(err);
                 }
@@ -57,7 +57,7 @@ var server = ws.createServer(function (conn) {
                 
                 child.on('exit', function () {
                     
-                    fs.readFile(path.join(__dirname 'public/temp') + "/test2.tmp", 'utf8', function (err, data) {
+                    fs.readFile(path.join(__dirname + 'public/temp') + "/test2.tmp", 'utf8', function (err, data) {
                         if (err) {
                             return console.log(err);
                         }
