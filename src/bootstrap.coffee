@@ -6,9 +6,9 @@ HoSAuth     = require('hos-auth')
 cors        = require('cors')
 path        = require('path')
 
-amqpurl = 'localhost'
-amqpusername = 'guest'
-amqppassword = 'guest'
+amqpurl     = process.env.AMQP_URL ? "localhost"
+amqpusername    = process.env.AMQP_USERNAME ? "guest"
+amqppassword    = process.env.AMQP_PASSWORD ? "guest"
 
 hosAuth = new HoSAuth(amqpurl, amqpusername, amqppassword)
 hosAuth.on 'message', (msg) ->
