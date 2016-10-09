@@ -26,10 +26,10 @@ app.use cors()
 app.use express.static(path.join(__dirname, '../public'))
 app.get '/', (req, res)-> res.sendFile(path.join(__dirname,'../public/view/index.html'))
 app.use bodyParser.json()
-app.use hosApi.swaggerMetadata
-app.use hosApi.swaggerValidator
-app.use hosApi.swaggerUi
-app.use hosApi.middleware
+# app.use hosApi.swaggerMetadata
+# app.use hosApi.swaggerValidator
+# app.use hosApi.swaggerUi
+# app.use hosApi.middleware
 
 http.createServer(app).listen app.get('port'), ->
   console.log 'Express server listening on port ' + app.get('port')
